@@ -1,0 +1,254 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins", sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 1px;
+}
+
+#header a {
+    color: #a5a5a5;
+   
+}
+
+#header {
+    font-size: 20px;
+    color: #fff;
+    padding-top: 1px ;
+    margin-left: 150px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#header img {
+    margin-right: 15px;
+}
+
+#header a:hover {
+    color: #fff;
+}
+
+#header nav ul {
+    list-style: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+}
+
+#header nav li {
+    margin: 1.5rem;
+}
+
+#header nav a {
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+#home {
+    background-image: url("./images/imagemFundo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+#btn-get {
+    background-color: white;
+    color: rgb(0, 0, 0);
+    padding: 10px 30px;
+    border-color: white;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 20px; 
+    right: 200px; 
+}
+
+#btn-get:hover {
+    background-color: #000000;
+    color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.text-home {
+    position: absolute;
+    left: 150px;
+    top: 30%;
+    transform: translateY(-50%);
+    color: white;
+    letter-spacing: 2px;
+}
+
+.text-home h1 {
+    font-size: 60px; 
+    margin-bottom: 20px;
+}
+
+.text-home p {
+    font-size: 16px; 
+    margin-bottom: 30px;
+}
+
+.text-home button {
+    background-color: transparent; 
+    color: white;
+    padding: 10px 30px;
+    border-color: white;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 18px;
+    letter-spacing: 1px;
+    
+}
+
+.text-home button:hover {
+    background-color: white;
+    color: black;
+    border-color: black;
+    transition: background-color 1.3s ease, color 0.3s ease;
+}
+
+.text-home button:hover img {
+    content: url("./images/logoPreto.png");
+}
+
+#shop {
+    margin-left: 130px;
+    margin-top: 100px;
+    font-size: 20px;
+}
+#shop header {
+    border-bottom: #a5a5a5;
+    
+}
+
+#shop img {
+    margin-right: 15px;
+}
+
+#subtitle-shop {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+#container-shop {
+    margin-top: 40px;
+    border: #a5a5a5 1px solid;
+    margin-left: 40px;
+}
+
+.btn-search {
+    border-radius: 50px;
+    padding: 1px;
+    height: 50px;
+    width: auto;
+    background-color: #F4F4F4;
+}
+
+.btn-search img {
+    margin-left: 20px;
+}
+
+.btn-search input{
+    background-color: transparent; 
+    padding: 10px 30px;
+    border-color: transparent;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+#featured-menu {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#featured-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+#featured-menu li {
+    margin-right: 20px;
+}
+
+#featured-menu li a {
+    text-decoration: none;
+    color: #333;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+#featured-menu li a.active,
+#featured-menu li a:hover {
+    background: linear-gradient(to right, #101828, #233250);
+    color: #fff;
+    border: linear-gradient(to right, #233250, #101828);
+}
+
+#images {
+    margin-top: 50px;
+    display: flex; 
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.category-section {
+    display: none; 
+
+}
+
+.category-section.active {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    justify-content: center; 
+}
+
+.category-section img {
+    width: 100%; 
+    max-width: 450px;
+    height: auto;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+.category-section img:hover {
+    border: 5px solid #233250;
+}
+
+.container-btn {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 50px;
+    margin-right: 100px;
+}
+
+.container-btn a {
+    text-decoration: none;
+    color: #101828;
+    font-size: 20px;
+}
+
+.container-btn button {
+    text-decoration: none!important;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: transparent;
+}
