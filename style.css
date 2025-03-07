@@ -5,12 +5,14 @@ html {
 * {
     margin: 0px;
     padding: 0px;
-    font-family: "Poppins", sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 ::-webkit-scrollbar {
     width: 1px;
 }
+
+/* Seção Home */
 
 #header a {
     color: #a5a5a5;
@@ -20,11 +22,12 @@ html {
 #header {
     font-size: 20px;
     color: #fff;
-    padding-top: 1px ;
+    
     margin-left: 150px;
     display: flex;
     align-items: center;
     position: relative;
+   
 }
 
 #header img {
@@ -33,6 +36,9 @@ html {
 
 #header a:hover {
     color: #fff;
+    cursor: pointer;
+    
+   
 }
 
 #header nav ul {
@@ -44,7 +50,7 @@ html {
 }
 
 #header nav li {
-    margin: 1.5rem;
+    margin: 16px;
 }
 
 #header nav a {
@@ -85,7 +91,7 @@ html {
 .text-home {
     position: absolute;
     left: 150px;
-    top: 30%;
+    top: 40%;
     transform: translateY(-50%);
     color: white;
     letter-spacing: 2px;
@@ -101,7 +107,13 @@ html {
     margin-bottom: 30px;
 }
 
-.text-home button {
+.btn-shop a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 5px;
+}
+
+.text-home .btn-shop  {
     background-color: transparent; 
     color: white;
     padding: 10px 30px;
@@ -113,16 +125,30 @@ html {
     
 }
 
-.text-home button:hover {
+.text-home .btn-shop:hover {
     background-color: white;
     color: black;
     border-color: black;
     transition: background-color 1.3s ease, color 0.3s ease;
 }
 
-.text-home button:hover img {
+.btn-shop img {
+    margin-left: 10px;
+}
+
+.text-home .btn-shop:hover img {
     content: url("./images/logoPreto.png");
 }
+
+.btn-shop:hover a {
+    color: #000000;
+    transition: color 0.3s ease;
+}
+
+/* Seção Shop */
+
+
+
 
 #shop {
     margin-left: 130px;
@@ -130,13 +156,15 @@ html {
     font-size: 20px;
 }
 #shop header {
-    border-bottom: #a5a5a5;
+    border-bottom: 1px solid #a5a5a5;
+    padding-bottom: 10px;
+    font-weight: 500;
+    margin-right: 20px;
+    
     
 }
 
-#shop img {
-    margin-right: 15px;
-}
+
 
 #subtitle-shop {
     display: flex;
@@ -146,7 +174,9 @@ html {
 #container-shop {
     margin-top: 40px;
     border: #a5a5a5 1px solid;
+    
     margin-left: 40px;
+    margin-right: 30px;
 }
 
 .btn-search {
@@ -231,6 +261,9 @@ html {
 
 .category-section img:hover {
     border: 5px solid #233250;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    transform: scale(1.05);
 }
 
 .container-btn {
@@ -252,3 +285,466 @@ html {
     background-color: transparent;
     border: transparent;
 }
+
+
+
+
+
+
+
+.ui-card {
+    width: 100%;
+    background: radial-gradient(#646770 50%, #646770 100%);
+    overflow: hidden;
+    position: relative;
+    border-radius: 15px;
+}
+
+.ui-card img {
+    transform: scale(1.3);
+    transition: all 0.3s ease-out;
+    
+}
+
+.ui-card:hover img{
+    transform: scale(1.1) translateY(-20px);
+    opacity: 0.3;
+}
+
+.description {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.description h2 {
+    font-weight: 500;
+    font-size: 25px;
+    margin:  0 20px;
+    transform: translateY(30px);
+    opacity: 0;
+    transition: all 0.3s ease-out;
+    text-align: left;
+}
+
+.description h3 {
+    font-weight: 700;
+    font-size: 34px;
+    margin:  0 20px;
+    transform: translateY(30px);
+    opacity: 0;
+    transition: all 0.3s ease-out;
+    margin-bottom: 10px;
+}
+
+.description p {
+    transform: translateY(30px);
+    opacity: 0;
+    transition: all 0.3s ease-out 0.2s;
+    margin-bottom: 50px;
+    
+}
+
+
+.description span {
+    color: #fff;
+    background: #101828;
+    display: inline;
+    padding: 10px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: transparent;
+    transform: translateY(30px);
+    opacity: 0;
+    transition: all 0.3s ease-out 0.1s;
+    box-shadow: 5px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.description a {
+    color: #fff;
+    background: linear-gradient(to right, #101828, #233250);
+    display: inline;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    border-radius: 5px;
+    border: transparent;
+    transform: translateY(30px);
+    opacity: 0;
+    transition: all 0.3s ease-out 0.1s;
+    box-shadow: 5px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.description a:hover,
+.description span:hover {
+    background: #233250;
+    letter-spacing: 3px;
+}
+
+.ui-card:hover .description h2 {
+    transform: translateY(0);
+    opacity: 1;
+    text-align: left;
+}
+
+
+
+
+.ui-card:hover .description h3 {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.ui-card:hover .description p {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.ui-card:hover .description a,
+.ui-card:hover .description span {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.description button {
+    background-color: transparent;
+    border: transparent;
+    margin-top: 70px;
+    margin-bottom: 25px;
+    margin-right: 10px;
+
+}
+
+
+
+.title-product {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding-bottom: 70px;
+    place-items: center;
+    align-items: baseline;
+    
+}
+
+.title-product  h2 {
+    font-weight: 500;
+    font-size: 35px;
+    position: relative;
+   margin-bottom: 15px;
+   right: 20px;
+}
+
+.title-product  .favorite-icon {
+    transform: translateY(30px);
+    opacity: 0;
+    transition: all 0.3s ease-out 0.2s;
+   position: relative;
+   margin-bottom: 15px;
+   left: 50px;
+}
+
+.ui-card:hover .title-product h2,
+.ui-card:hover .title-product .favorite-icon {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.favorite-icon {
+    font-size: 50px;
+    color: transparent; 
+    -webkit-text-stroke: 2px black; 
+    cursor: pointer;
+    transition: transform 0.3s ease, -webkit-text-stroke 0.3s ease;
+  }
+  
+  .favorite-icon:hover {
+    transform: scale(1.2);
+    -webkit-text-stroke: 2px rgb(0, 0, 0); 
+    color: red;
+  }
+  
+  
+  .heart::before {
+    content: "\2764"; /* Código Unicode para coração */
+  }
+
+
+  .btn-add {
+    background-color: #233250;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    
+    cursor: pointer;
+    
+}
+
+
+
+.quantity {
+    font-size: 18px;
+    font-weight: bold;
+    padding: -3px;
+    margin: -5px;
+    border-radius: 0px !important;
+}
+
+.btn-action-add{
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+}
+
+.btn-action-remove{
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+}
+
+/* Seçao Services */
+
+#services {
+    margin-left: 130px;
+    margin-top: 100px;
+    font-size: 20px;
+}
+
+
+#services header {
+    border-bottom: 1px solid #a5a5a5;
+    padding-bottom: 10px;
+    font-weight: 500;
+    margin-right: 20px;
+    
+    
+}
+
+#container-services {
+    margin-top: 40px;
+    border: #a5a5a5 1px solid;
+    padding: 30px;
+    
+    margin-left: 40px;
+    margin-right: 30px;
+}
+
+.services-grid {
+display: grid;
+    grid-template-areas: 
+    "grooming boarding adoption"
+    "veterinary training adoption";
+
+
+    grid-template-rows: repeat(1fr 1fr);
+    grid-template-columns: 1fr 1fr 1fr;
+
+   
+   text-align: center;
+
+   gap: 15px;
+
+   
+}
+
+.services-grid > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%; /* Define uma altura fixa para as células */
+}
+
+.services-grid img {
+    max-width: 100%;
+  height: 100%;
+    object-fit: cover;
+    
+    
+    
+}
+
+.grooming {
+    grid-area: grooming; /*Nome da area */
+    display: flex; /* Adiciona flexbox para centralizar verticalmente */
+    flex-direction: column; /* Organiza os elementos em coluna */
+    justify-content: center; /* Centraliza verticalmente */
+}
+
+.boarding {
+    grid-area: boarding; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    
+}
+.adoption {
+    grid-area: adoption; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-row: span 2;
+}
+
+.ui-services.adoption .description-services {
+    position: absolute;
+    top: 10px;
+    transform: translateX(-50%); 
+    transform: translateY(40%);
+}
+
+.veterinary {
+    grid-area: veterinary; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.training {
+    grid-area: training; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+
+
+
+.ui-services {
+   
+    background: radial-gradient(#111 50%, #000 100%);
+    overflow: hidden;
+    position: relative;
+    border-radius: 15px;
+   
+
+
+    
+}
+
+
+
+
+.ui-services img {
+    transform: scale(1.3);
+    transition: all 0.3s ease-out;
+}
+
+.ui-services:hover img{
+    transform: scale(1.1) translateY(-20px);
+    opacity: 0.3;
+}
+
+.description-services {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    transform: translate(0%, -30%);
+    text-align: center;
+
+    
+}
+
+.description-services h3 {
+    font-weight: 700;
+    font-size: 50px;
+    margin: 0 0 20px;
+    transform: translateY(30px);
+    opacity: 1;
+    transition: all 0.3s ease-out 0.4s;
+    
+}
+
+.description-services p {
+    transform: translateY(30px);
+    opacity: 0;
+    transition: all 0.3s ease-out 0.2s;
+}
+
+.description-services a {
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: #fff;
+    background: linear-gradient(to left, #233250, #101828);
+    display: inline-block;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    transform: translateY(30px);
+    opacity: 0;
+    transition: all 0.3s ease-out 0.4;
+}
+
+.container-btn-services {
+    margin-top: 40px;
+}
+
+.description-services a:hover {
+    background: #233250;
+    transition: letter-spacing 0.3s ease;
+    letter-spacing: 3px;
+}
+
+.ui-services:hover .description-services h3 {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.ui-services:hover .description-services p {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.ui-services:hover .description-services a {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Seção About Us */
+
+#about {
+   
+    margin-top: 100px;
+}
+#about header {
+    border-bottom: 1px solid #a5a5a5;
+    padding-bottom: 10px;
+    font-weight: 500;
+    margin-right: 20px;
+}
+
+.about-container {
+    margin-top: 40px;
+    border: #a5a5a5 1px solid;
+    padding: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+    display: flex;
+}
+
+.text-about {
+    
+    text-align: left;
+    
+    font-size: 20px;
+    padding-top: 30px;
+    padding-left: 10px;
+}
+
+.img-about img {
+    height: 500px;
+   width: auto;
+   
+}
+
