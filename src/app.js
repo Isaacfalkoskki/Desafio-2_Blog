@@ -38,6 +38,80 @@ document.querySelector( ".category-section.random").classList.add("active")
 
 
 
+//Validação do formulário
+
+const form = document.getElementById("form")
+const campos = document.querySelectorAll(".required")
+const span = document.querySelectorAll(".span-required")
+const emailRegex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;  //Validação se email possui a estrutura de um email
+
+//Acionar o erro
+function setError(index) {
+    campos[index].style.border = "1px solid red"
+    span[index].style.display = "block"
+    
+}
+
+//Remover o erro
+function removeError(index) {
+    campos[index].style.border = ""
+    span[index].style.display = "none"
+}
+
+
+//Validação do nome e sobrenome, se caso for menor que 3 caracteres chama a função SetError, se não se mantém o normal
+function nameValidate() {
+    if(campos[0].value.length < 3) {
+        setError(0)
+    }
+    else {
+        removeError(0)
+    }
+}
+function lastNameValidate() {
+    if(campos[1].value.length < 3) {
+        setError(1)
+    }
+    else {
+        removeError(1)
+    }
+}
+
+//Validação de amil usando a estrutura do emailRegex
+function emailValidate() {
+    if(!emailRegex.test(campos[2].value)) {
+        setError(2)
+    }
+    else {
+        removeError(2)
+    }
+}
+
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navResponsive = document.querySelector(".nav-responsive");
+    const menuLinks = document.querySelectorAll(".nav-responsive a")
+
+    
+
+    menuToggle.addEventListener("click", function() {
+        
+        navResponsive.classList.toggle("active");
+        
+    });
+
+    menuLinks.forEach(link => {
+        link.addEventListener("click", function () {
+            navResponsive.classList.remove("active");
+        })
+    })
+});
+
+
+
 
 
 
