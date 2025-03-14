@@ -4,99 +4,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./images/logoBranco.png">
     <title>Paws n' Play - Blog</title>
     <link rel="stylesheet" href="./style.css">
     <script src="./src/app.js" defer></script>
 </head>
+
 <body>
+
 <section id="home">
+
     <header id="header">
 
         <div class="header-text-responsive">
-        <img src="./images/logoBranco.png" width="40px"><span>Paws n' Play</span></div>
+            <img src="./images/logoBranco.png" width="40px"><span>Paws n' Play
+        </div>
 
-        <div class="menu-toggle">&#8942;</div>
+        <div class="menu-toggle"><img src="./images/toggleMenu.png" width="40"></div>
 
         <div class="nav-responsive">
-        <nav>
-        <ul>
-            <li class="dropdown">
-                <a href="#shop">Shop</a><img src="./images/arrowD.png">
+            <nav>
+                <ul>
+                    <li class="dropdown">
+                        <a href="#shop">Shop</a><img src="./images/arrowD.png">
+    
+                        <div class="dropdown-menu">
+                            <a class="dropdown-content" href="#shop">Random</a>
+                            <a class="dropdown-content" href="#shop">Cat</a>
+                            <a class="dropdown-content" href="#shop">Dogs</a>
+                            <a class="dropdown-content" href="#shop">Fish</a>
+                            <a class="dropdown-content" href="#shop">Birds</a>
+                        </div>
 
-                <div class="dropdown-menu">
-
-                    <a class="dropdown-content" href="#shop">Random</a>
-                    <a class="dropdown-content" href="#shop">Cat</a>
-                    <a class="dropdown-content" href="#shop">Dogs</a>
-                    <a class="dropdown-content" href="#shop">Fish</a>
-                    <a class="dropdown-content" href="#shop">Birds</a>
-
-                </div>
-            </li>
+                    </li>
 
 
-            <li class="dropdown">
-                <a href="#shop">Services<img src="./images/arrowD.png"></a>
+                    <li class="dropdown">
+                        <a href="#services">Services</a><img src="./images/arrowD.png">
 
-                <div class="dropdown-menu">
+                        <div class="dropdown-menu">
+                            <a class="dropdown-content" href="#services">Grooming</a>
+                            <a class="dropdown-content" href="#services">Boarding</a>
+                            <a class="dropdown-content" href="#services">Adoption</a>
+                            <a class="dropdown-content" href="#services">Veterinary</a>
+                            <a class="dropdown-content" href="#services">Training</a>
+                        </div>
 
-                    <a class="dropdown-content" href="#shop">Grooming</a>
-                    <a class="dropdown-content" href="#shop">Boarding</a>
-                    <a class="dropdown-content" href="#shop">Adoption</a>
-                    <a class="dropdown-content" href="#shop">Veterinary</a>
-                    <a class="dropdown-content" href="#shop">Training</a>
+                    </li>
 
-                </div>
-            </li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#get-touch">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
 
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#get-touch">Contact</a></li>
+    <div id="btn-get"><a href="#get-touch">Get started</a>
+    </div>
 
-        </ul>
-        
-    </nav>
-</div>
-    <div id="btn-get"><a href="#get-touch">Get started</a></div>
     </header>
 
     <article class="text-home">
         <h1>Pawsitively Perfect: <br>Where Every Pet's <br>Dream Comes True!</h1>
-        <p>Welcome to Paws n' Play, the ultimate destination for pet lovers! Explore a world of <br>tail-wagging joy and furry companionship with our wide range of products and <br> services. From pampering essentials to playful toys, we're here to make every <br> moment with your pet pawsitively perfect!"</p>
+        <p>Welcome to Paws n' Play, the ultimate destination for pet lovers! Explore a world of <br>tail-wagging joy and
+        furry companionship with our wide range of products and <br> services. From pampering essentials to playful
+        toys, we're here to make every <br> moment with your pet pawsitively perfect!"</p>
         <button class="btn-shop"><a href="#shop">Shop Now</a><img src="./images/logoBranco.png" width="30px"></button>
     </article>
 
-    
+
 </section>
 
 <section id="shop">
+
     <header>
-    <h2><img src="./images/logoPreto.png" width="30px">Shop</h2></header>
+        <h2><img src="./images/logoPreto.png" width="30px">Shop</h2>
+        <button class="lupa-responsive" onclick="toggleSearch()">
+        <img src="./images/iconeLupa.png">
+        </button>
+    </header>
 
-    <div id="container-shop">
+<div id="container-shop">
 
-<aside id="subtitle-shop">
+    <aside id="subtitle-shop">
+        <h3>Featured Products</h3>
 
-    <h3>Featured Products</h3>
+        <div class="btn-search">
+            <img src="./images/iconeLupa.png" href="#">
+            <input type="search" placeholder="Search">
+        </div>
+    </aside>
 
-    <div class="btn-search">
-        <img src="./images/iconeLupa.png" href="#">
-    <input type="search" placeholder="Search">
-</div>
-
-
-
-
-
-
-
-
-
-
-</aside>
 <div id="featured-menu">
     <ul>
         <li><a href="#" class="active" data-category="random">Random</a></li>
@@ -104,582 +104,608 @@
         <li><a href="#" data-category="dogs">Dogs</a></li>
         <li><a href="#" data-category="fish">Fish</a></li>
         <li><a href="#" data-category="birds">Birds</a></li>
-        
     </ul>
+</div>
+
+<section id="images" class="gallery">
+    <div class="category-section random">
+
+        <div class="ui-card">
+            <img src="./images/fotoCat1.png">
+
+            <div class="description">
+                <div class="title-product">
+                    <h2>₦15,000.00</h2>
+                    <div class="favorite-icon"><i class="heart"></i></div>
+                </div>
+
+                <h3>Multivitamin For Cat</h3>
+                <p>Lorem ipsum dolor sit amet consectetur. <br>Vitae donec pellentesque ut eget tempor <br>egestas diam.
+                </p>
+                <button class="btn-add">
+                    <span class="btn-action-add" href="#">+</span>
+                    <span class="quantity" href="#">1</span>
+                    <span class="btn-action-remove" href="#">-</span>
+                </button>
+                <button class="btn-add-card">
+                    <a href="#">Add to card</a>
+                </button>
+            </div>
+        </div>
+
+        <div class="ui-card">
+            <img src="./images/fotoCat2.png">
+
+            <div class="description">
+                <div class="title-product">
+                    <h2>₦15,000.00</h2>
+                    <div class="favorite-icon"><i class="heart"></i></div>
+                </div>
+
+                <h3>Cat Food</h3>
+                <p>Lorem ipsum dolor sit amet consectetur.<br> Vitae donec pellentesque ut eget tempor <br> egestas
+                    diam.</p>
+                <button class="btn-add">
+                    <span class="btn-action-add" href="#">+</span>
+                    <span class="quantity" href="#">1</span>
+                    <span class="btn-action-remove" href="#">-</span>
+                </button>
+                <button class="btn-add-card">
+                    <a href="#">Add to card</a>
+                </button>
+            </div>
+        </div>
+
+        <div class="ui-card">
+            <img src="./images/fotoDog1.png">
+
+            <div class="description">
+                <div class="title-product">
+                    <h2>₦15,000.00</h2>
+                    <div class="favorite-icon"><i class="heart"></i></div>
+                </div>
+
+                <h3>Dog Food</h3>
+                <p>Lorem ipsum dolor sit amet consectetur. <br> Vitae donec pellentesque ut eget tempor <br> egestas
+                    diam.</p>
+                <button class="btn-add">
+                    <span class="btn-action-add" href="#">+</span>
+                    <span class="quantity" href="#">1</span>
+                    <span class="btn-action-remove" href="#">-</span>
+                </button>
+                <button class="btn-add-card">
+                    <a href="#">Add to card</a>
+                </button>
+            </div>
+        </div>
+
+
+
+        <div class="ui-card">
+            <img src="./images/fotoDog2.png">
+
+            <div class="description">
+                <div class="title-product">
+                    <h2>₦15,000.00</h2>
+                    <div class="favorite-icon"><i class="heart"></i></div>
+                </div>
+
+                <h3>Dog Portion</h3>
+                <p>Lorem ipsum dolor sit amet consectetur. <br> Vitae donec pellentesque ut eget tempor <br> egestas
+                    diam.</p>
+                <button class="btn-add">
+                    <span class="btn-action-add" href="#">+</span>
+                    <span class="quantity" href="#">1</span>
+                    <span class="btn-action-remove" href="#">-</span>
+                </button>
+                <button class="btn-add-card">
+                    <a href="#">Add to card</a>
+                </button>
+            </div>
+        </div>
+
+
+        <div class="ui-card">
+            <img src="./images/fotoDog3.png">
+    
+            <div class="description">
+                <div class="title-product">
+                    <h2>₦15,000.00</h2>
+                    <div class="favorite-icon"><i class="heart"></i></div>
+                </div>
+
+                <h3>Pet Plate</h3>
+                <p>Lorem ipsum dolor sit amet consectetur. <br> Vitae donec pellentesque ut eget tempor <br> egestas
+                    diam.</p>
+                <button class="btn-add">
+                    <span class="btn-action-add" href="#">+</span>
+                    <span class="quantity" href="#">1</span>
+                    <span class="btn-action-remove" href="#">-</span>
+                </button>
+                <button class="btn-add-card">
+                    <a href="#">Add to card</a>
+                </button>
+            </div>
+        </div>
+
+
+        <div class="ui-card">
+            <img src="./images/fotoDog4.png">
+
+            <div class="description">
+                <div class="title-product">
+                    <h2>₦15,000.00</h2>
+                    <div class="favorite-icon"><i class="heart"></i></div>
+                </div>
+
+                <h3>Dog Water</h3>
+                <p>Lorem ipsum dolor sit amet consectetur. <br> Vitae donec pellentesque ut eget tempor <br> egestas
+                    diam.</p>
+                <button class="btn-add">
+                    <span class="btn-action-add" href="#">+</span>
+                    <span class="quantity" href="#">1</span>
+                    <span class="btn-action-remove" href="#">-</span>
+                </button>
+                <button class="btn-add-card">
+                    <a href="#">Add to card</a>
+                </button>
+            </div>
+        </div>
+
+
+        <div class="ui-card">
+            <img src="./images/fotoDog5.png">
+
+            <div class="description">
+                <div class="title-product">
+                    <h2>₦15,000.00</h2>
+                    <div class="favorite-icon"><i class="heart"></i></div>
+                </div>
+
+                <h3>Ddog Milk</h3>
+                <p>Lorem ipsum dolor sit amet consectetur. <br> Vitae donec pellentesque ut eget tempor <br> egestas
+                    diam.</p>
+                <button class="btn-add">
+                    <span class="btn-action-add" href="#">+</span>
+                    <span class="quantity" href="#">1</span>
+                    <span class="btn-action-remove" href="#">-</span>
+                </button>
+                <button class="btn-add-card">
+                    <a href="#">Add to card</a>
+                </button>
+            </div>
+        </div>
+
+
+        <div class="ui-card">
+            <img src="./images/fotoDog6.png">
+
+            <div class="description">
+                <div class="title-product">
+                    <h2>₦15,000.00</h2>
+                    <div class="favorite-icon"><i class="heart"></i></div>
+                </div>
+
+                <h3>Dog Juice</h3>
+                <p>Lorem ipsum dolor sit amet consectetur. <br> Vitae donec pellentesque ut eget tempor <br> egestas
+                    diam.</p>
+                <button class="btn-add">
+                    <span class="btn-action-add" href="#">+</span>
+                    <span class="quantity" href="#">1</span>
+                    <span class="btn-action-remove" href="#">-</span>
+                </button>
+                <button class="btn-add-card">
+                    <a href="#">Add to card</a>
+                </button>
+            </div>
+        </div>
+
+
+        <div class="ui-card">
+            <img src="./images/fotoDog7.png">
+
+            <div class="description">
+                <div class="title-product">
+                    <h2>₦15,000.00</h2>
+                    <div class="favorite-icon"><i class="heart"></i></div>
+                </div>
+
+                <h3>Dog Soda</h3>
+                <p>Lorem ipsum dolor sit amet consectetur. <br> Vitae donec pellentesque ut eget tempor <br> egestas
+                    diam.</p>
+                <button class="btn-add">
+                    <span class="btn-action-add" href="#">+</span>
+                    <span class="quantity" href="#">1</span>
+                    <span class="btn-action-remove" href="#">-</span>
+                </button>
+                <button class="btn-add-card">
+                    <a href="#">Add to card</a>
+                </button>
+            </div>
+        </div>
+
+
+        <div class="ui-card">
+            <img src="./images/fotoFish1.jpg">
+
+            <div class="description">
+                <div class="title-product">
+                    <h2>₦15,000.00</h2>
+                    <div class="favorite-icon"><i class="heart"></i></div>
+                </div>
+
+                <h3>Fish Food</h3>
+                <p>Lorem ipsum dolor sit amet consectetur. <br> Vitae donec pellentesque ut eget tempor <br> egestas
+                    diam.</p>
+                <button class="btn-add">
+                    <span class="btn-action-add" href="#">+</span>
+                    <span class="quantity" href="#">1</span>
+                    <span class="btn-action-remove" href="#">-</span>
+                </button>
+                <button class="btn-add-card">
+                    <a href="#">Add to card</a>
+                </button>
+            </div>
+        </div>
+
+
+        <div class="ui-card">
+            <img src="./images/fotoBird1.png">
+
+            <div class="description">
+                <div class="title-product">
+                    <h2>₦15,000.00</h2>
+                    <div class="favorite-icon"><i class="heart"></i></div>
+                </div>
+
+                <h3>Bird Water</h3>
+                <p>Lorem ipsum dolor sit amet consectetur. <br> Vitae donec pellentesque ut eget tempor <br> egestas
+                    diam.</p>
+                <button class="btn-add">
+                    <span class="btn-action-add" href="#">+</span>
+                    <span class="quantity" href="#">1</span>
+                    <span class="btn-action-remove" href="#">-</span>
+                </button>
+                <button class="btn-add-card">
+                    <a href="#">Add to card</a>
+                </button>
+            </div>
+        </div>
+
+
+
     </div>
 
-    <section id="images" class="gallery">
+    <div class="category-section cat">
+        <div class="ui-card">
+            <img src="./images/fotoCat1.png">
 
-        
-            <div class="category-section random">
-
-              <div class="ui-card">
-                <img src="./images/fotoCat1.png">
-                <div class="description">
-                    
-                    <div class="title-product">
+            <div class="description">
+                <div class="title-product">
                     <h2>₦15,000.00</h2>
                     <div class="favorite-icon"><i class="heart"></i></div>
                 </div>
-                  
-                    <h3>Multivitamin For Cat</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur. <br>Vitae donec pellentesque ut eget tempor <br>egestas diam.</p>
-                    <button class="btn-add">
-                        <span class="btn-action-add" href="#">+</span>
-                        <span class="quantity" href="#">1</span>
-                        <span class="btn-action-remove" href="#">-</span>
-                    </button>
-                    <button>
-                        <a href="#">Add to card</a>
-                    </button>
-                </div>
+
+                <h3>Multivitamin For Cat</h3>
+                <p>Lorem ipsum dolor sit amet consectetur. <br>Vitae donec pellentesque ut eget tempor <br>egestas diam.
+                </p>
+                <button class="btn-add">
+                    <span class="btn-action-add" href="#">+</span>
+                    <span class="quantity" href="#">1</span>
+                    <span class="btn-action-remove" href="#">-</span>
+                </button>
+                <button class="btn-add-card">
+                    <a href="#">Add to card</a>
+                </button>
             </div>
+        </div>
+
+
+        <div class="ui-card">
+            <img src="./images/fotoCat2.png">
+
+            <div class="description">
+                <div class="title-product">
+                    <h2>₦15,000.00</h2>
+                    <div class="favorite-icon"><i class="heart"></i></div>
+                </div>
+
+                <h3>Cat Food</h3>
+                <p>Lorem ipsum dolor sit amet consectetur.<br> Vitae donec pellentesque ut eget tempor <br> egestas
+                    diam.</p>
+                <button class="btn-add">
+                    <span class="btn-action-add" href="#">+</span>
+                    <span class="quantity" href="#">1</span>
+                    <span class="btn-action-remove" href="#">-</span>
+                </button>
+                <button class="btn-add-card">
+                    <a href="#">Add to card</a>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="category-section dogs">
+        <div class="ui-card">
+            <img src="./images/fotoDog1.png">
+
+            <div class="description">
+                <div class="title-product">
+                    <h2>₦15,000.00</h2>
+                    <div class="favorite-icon"><i class="heart"></i></div>
+                </div>
+
+                <h3>Dog Food</h3>
+                <p>Lorem ipsum dolor sit amet consectetur. <br> Vitae donec pellentesque ut eget tempor <br> egestas
+                    diam.</p>
+                <button class="btn-add">
+                    <span class="btn-action-add" href="#">+</span>
+                    <span class="quantity" href="#">1</span>
+                    <span class="btn-action-remove" href="#">-</span>
+                </button>
+                <button class="btn-add-card">
+                    <a href="#">Add to card</a>
+                </button>
+            </div>
+        </div>
+
+
+
+        <div class="ui-card">
+            <img src="./images/fotoDog2.png">
+
+            <div class="description">
+                <div class="title-product">
+                    <h2>₦15,000.00</h2>
+                    <div class="favorite-icon"><i class="heart"></i></div>
+                </div>
+
+                <h3>Dog Portion</h3>
+                <p>Lorem ipsum dolor sit amet consectetur. <br> Vitae donec pellentesque ut eget tempor <br> egestas
+                    diam.</p>
+                <button class="btn-add">
+                    <span class="btn-action-add" href="#">+</span>
+                    <span class="quantity" href="#">1</span>
+                    <span class="btn-action-remove" href="#">-</span>
+                </button>
+                <button class="btn-add-card">
+                    <a href="#">Add to card</a>
+                </button>
+            </div>
+        </div>
+
+
+        <div class="ui-card">
+            <img src="./images/fotoDog3.png">
+
+            <div class="description">
+                <div class="title-product">
+                    <h2>₦15,000.00</h2>
+                    <div class="favorite-icon"><i class="heart"></i></div>
+                </div>
+
+                <h3>Pet Plate</h3>
+                <p>Lorem ipsum dolor sit amet consectetur. <br> Vitae donec pellentesque ut eget tempor <br> egestas
+                    diam.</p>
+                <button class="btn-add">
+                    <span class="btn-action-add" href="#">+</span>
+                    <span class="quantity" href="#">1</span>
+                    <span class="btn-action-remove" href="#">-</span>
+                </button>
+                <button class="btn-add-card">
+                    <a href="#">Add to card</a>
+                </button>
+            </div>
+        </div>
+
+
+        <div class="ui-card">
+            <img src="./images/fotoDog4.png">
+
+            <div class="description">
+                <div class="title-product">
+                    <h2>₦15,000.00</h2>
+                    <div class="favorite-icon"><i class="heart"></i></div>
+                </div>
+
+                <h3>Dog Water</h3>
+                <p>Lorem ipsum dolor sit amet consectetur. <br> Vitae donec pellentesque ut eget tempor <br> egestas
+                    diam.</p>
+                <button class="btn-add">
+                    <span class="btn-action-add" href="#">+</span>
+                    <span class="quantity" href="#">1</span>
+                    <span class="btn-action-remove" href="#">-</span>
+                </button>
+                <button class="btn-add-card">
+                    <a href="#">Add to card</a>
+                </button>
+            </div>
+        </div>
+
+
+        <div class="ui-card">
+            <img src="./images/fotoDog5.png">
+
+            <div class="description">
+                <div class="title-product">
+                    <h2>₦15,000.00</h2>
+                    <div class="favorite-icon"><i class="heart"></i></div>
+                </div>
+
+                <h3>Dog Milk</h3>
+                <p>Lorem ipsum dolor sit amet consectetur. <br> Vitae donec pellentesque ut eget tempor <br> egestas
+                    diam.</p>
+                <button class="btn-add">
+                    <span class="btn-action-add" href="#">+</span>
+                    <span class="quantity" href="#">1</span>
+                    <span class="btn-action-remove" href="#">-</span>
+                </button>
+                <button class="btn-add-card">
+                    <a href="#">Add to card</a>
+                </button>
+            </div>
+        </div>
+
+
+        <div class="ui-card">
+            <img src="./images/fotoDog6.png">
             
-            
-            <div class="ui-card">
-                <img src="./images/fotoCat2.png">
-                <div class="description">
-
-                    <div class="title-product">
+            <div class="description">
+                <div class="title-product">
                     <h2>₦15,000.00</h2>
                     <div class="favorite-icon"><i class="heart"></i></div>
                 </div>
-                  
-                    <h3>Cat Food</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur.<br> Vitae donec pellentesque ut eget tempor <br> egestas diam.</p>
-                    <button class="btn-add">
-                        <span class="btn-action-add" href="#">+</span>
-                        <span class="quantity" href="#">1</span>
-                        <span class="btn-action-remove" href="#">-</span>
-                    </button>
-                    <button>
-                        <a href="#">Add to card</a>
-                    </button>
-                </div>
+
+                <h3>Dog Juice</h3>
+                <p>Lorem ipsum dolor sit amet consectetur. <br> Vitae donec pellentesque ut eget tempor <br> egestas
+                    diam.</p>
+                <button class="btn-add">
+                    <span class="btn-action-add" href="#">+</span>
+                    <span class="quantity" href="#">1</span>
+                    <span class="btn-action-remove" href="#">-</span>
+                </button>
+                <button class="btn-add-card">
+                    <a href="#">Add to card</a>
+                </button>
             </div>
+        </div>
 
-            <div class="ui-card">
-                <img src="./images/fotoDog1.png">
-                <div class="description">
 
-                    <div class="title-product">
+        <div class="ui-card">
+            <img src="./images/fotoDog7.png">
+
+            <div class="description">
+                <div class="title-product">
                     <h2>₦15,000.00</h2>
                     <div class="favorite-icon"><i class="heart"></i></div>
                 </div>
-                  
-                    <h3>Dog Food</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur. <br> Vitae donec pellentesque ut eget tempor <br> egestas diam.</p>
-                    <button class="btn-add">
-                        <span class="btn-action-add" href="#">+</span>
-                        <span class="quantity" href="#">1</span>
-                        <span class="btn-action-remove" href="#">-</span>
-                    </button>
-                    <button>
-                        <a href="#">Add to card</a>
-                    </button>
-                </div>
-            </div> 
 
-
-                
-            <div class="ui-card">
-                <img src="./images/fotoDog2.png">
-                <div class="description">
-
-                    <div class="title-product">
-                    <h2>₦15,000.00</h2>
-                    <div class="favorite-icon"><i class="heart"></i></div>
-                </div>
-                  
-                    <h3>Dog Portion</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur. <br> Vitae donec pellentesque ut eget tempor <br> egestas diam.</p>
-                    <button class="btn-add">
-                        <span class="btn-action-add" href="#">+</span>
-                        <span class="quantity" href="#">1</span>
-                        <span class="btn-action-remove" href="#">-</span>
-                    </button>
-                    <button>
-                        <a href="#">Add to card</a>
-                    </button>
-                </div>
-            </div>  
-
-
-            <div class="ui-card">
-                <img src="./images/fotoDog3.png">
-                <div class="description">
-
-                    <div class="title-product">
-                    <h2>₦15,000.00</h2>
-                    <div class="favorite-icon"><i class="heart"></i></div>
-                </div>
-                  
-                    <h3>Pet Plate</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur. <br> Vitae donec pellentesque ut eget tempor <br> egestas diam.</p>
-                    <button class="btn-add">
-                        <span class="btn-action-add" href="#">+</span>
-                        <span class="quantity" href="#">1</span>
-                        <span class="btn-action-remove" href="#">-</span>
-                    </button>
-                    <button>
-                        <a href="#">Add to card</a>
-                    </button>
-                </div>
-            </div>   
-
-
-            <div class="ui-card">
-                <img src="./images/fotoDog4.png">
-                <div class="description">
-
-                    <div class="title-product">
-                    <h2>₦15,000.00</h2>
-                    <div class="favorite-icon"><i class="heart"></i></div>
-                </div>
-                  
-                    <h3>Dog Water</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur. <br> Vitae donec pellentesque ut eget tempor <br> egestas diam.</p>
-                    <button class="btn-add">
-                        <span class="btn-action-add" href="#">+</span>
-                        <span class="quantity" href="#">1</span>
-                        <span class="btn-action-remove" href="#">-</span>
-                    </button>
-                    <button>
-                        <a href="#">Add to card</a>
-                    </button>
-                </div>
-            </div>  
-
-
-            <div class="ui-card">
-                <img src="./images/fotoDog5.png">
-                <div class="description">
-
-                    <div class="title-product">
-                    <h2>₦15,000.00</h2>
-                    <div class="favorite-icon"><i class="heart"></i></div>
-                </div>
-                  
-                    <h3>Ddog Milk</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur. <br> Vitae donec pellentesque ut eget tempor <br> egestas diam.</p>
-                    <button class="btn-add">
-                        <span class="btn-action-add" href="#">+</span>
-                        <span class="quantity" href="#">1</span>
-                        <span class="btn-action-remove" href="#">-</span>
-                    </button>
-                    <button>
-                        <a href="#">Add to card</a>
-                    </button>
-                </div>
-            </div>  
-
-
-            <div class="ui-card">
-                <img src="./images/fotoDog6.png">
-                <div class="description">
-
-                    <div class="title-product">
-                    <h2>₦15,000.00</h2>
-                    <div class="favorite-icon"><i class="heart"></i></div>
-                </div>
-                  
-                    <h3>Dog Juice</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur. <br> Vitae donec pellentesque ut eget tempor <br> egestas diam.</p>
-                    <button class="btn-add">
-                        <span class="btn-action-add" href="#">+</span>
-                        <span class="quantity" href="#">1</span>
-                        <span class="btn-action-remove" href="#">-</span>
-                    </button>
-                    <button>
-                        <a href="#">Add to card</a>
-                    </button>
-                </div>
-            </div>   
-
-
-            <div class="ui-card">
-                <img src="./images/fotoDog7.png">
-                <div class="description">
-
-                    <div class="title-product">
-                    <h2>₦15,000.00</h2>
-                    <div class="favorite-icon"><i class="heart"></i></div>
-                </div>
-                  
-                    <h3>Dog Soda</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur. <br> Vitae donec pellentesque ut eget tempor <br> egestas diam.</p>
-                    <button class="btn-add">
-                        <span class="btn-action-add" href="#">+</span>
-                        <span class="quantity" href="#">1</span>
-                        <span class="btn-action-remove" href="#">-</span>
-                    </button>
-                    <button>
-                        <a href="#">Add to card</a>
-                    </button>
-                </div>
-            </div>   
-
-
-            <div class="ui-card">
-                <img src="./images/fotoFish1.jpg">
-                <div class="description">
-
-                    <div class="title-product">
-                    <h2>₦15,000.00</h2>
-                    <div class="favorite-icon"><i class="heart"></i></div>
-                </div>
-                  
-                    <h3>Fish Food</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur. <br> Vitae donec pellentesque ut eget tempor <br> egestas diam.</p>
-                    <button class="btn-add">
-                        <span class="btn-action-add" href="#">+</span>
-                        <span class="quantity" href="#">1</span>
-                        <span class="btn-action-remove" href="#">-</span>
-                    </button>
-                    <button>
-                        <a href="#">Add to card</a>
-                    </button>
-                </div>
-            </div> 
-
-
-            <div class="ui-card">
-                <img src="./images/fotoBird1.png">
-                <div class="description">
-
-                    <div class="title-product">
-                    <h2>₦15,000.00</h2>
-                    <div class="favorite-icon"><i class="heart"></i></div>
-                </div>
-                  
-                    <h3>Bird Water</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur. <br> Vitae donec pellentesque ut eget tempor <br> egestas diam.</p>
-                    <button class="btn-add">
-                        <span class="btn-action-add" href="#">+</span>
-                        <span class="quantity" href="#">1</span>
-                        <span class="btn-action-remove" href="#">-</span>
-                    </button>
-                    <button>
-                        <a href="#">Add to card</a>
-                    </button>
-                </div>
-            </div> 
-
-
-                
+                <h3>Dog Soda</h3>
+                <p>Lorem ipsum dolor sit amet consectetur. <br> Vitae donec pellentesque ut eget tempor <br> egestas
+                    diam.</p>
+                <button class="btn-add">
+                    <span class="btn-action-add" href="#">+</span>
+                    <span class="quantity" href="#">1</span>
+                    <span class="btn-action-remove" href="#">-</span>
+                </button>
+                <button class="btn-add-card">
+                    <a href="#">Add to card</a>
+                </button>
             </div>
-            
-            <div class="category-section cat">
-                <div class="ui-card">
-                    <img src="./images/fotoCat1.png">
-                    <div class="description">
-    
-                        <div class="title-product">
-                        <h2>₦15,000.00</h2>
-                        <div class="favorite-icon"><i class="heart"></i></div>
-                    </div>
-                      
-                        <h3>Multivitamin For Cat</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur. <br>Vitae donec pellentesque ut eget tempor <br>egestas diam.</p>
-                        <button class="btn-add">
-                            <span class="btn-action-add" href="#">+</span>
-                            <span class="quantity" href="#">1</span>
-                            <span class="btn-action-remove" href="#">-</span>
-                        </button>
-                        <button>
-                            <a href="#">Add to card</a>
-                        </button>
-                    </div>
-                </div>
-                
-                
-                <div class="ui-card">
-                    <img src="./images/fotoCat2.png">
-                    <div class="description">
-    
-                        <div class="title-product">
-                        <h2>₦15,000.00</h2>
-                        <div class="favorite-icon"><i class="heart"></i></div>
-                    </div>
-                      
-                        <h3>Cat Food</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur.<br> Vitae donec pellentesque ut eget tempor <br> egestas diam.</p>
-                        <button class="btn-add">
-                            <span class="btn-action-add" href="#">+</span>
-                            <span class="quantity" href="#">1</span>
-                            <span class="btn-action-remove" href="#">-</span>
-                        </button>
-                        <button>
-                            <a href="#">Add to card</a>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="category-section dogs">
-                <div class="ui-card">
-                    <img src="./images/fotoDog1.png">
-                    <div class="description">
-    
-                        <div class="title-product">
-                        <h2>₦15,000.00</h2>
-                        <div class="favorite-icon"><i class="heart"></i></div>
-                    </div>
-                      
-                        <h3>Dog Food</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur. <br> Vitae donec pellentesque ut eget tempor <br> egestas diam.</p>
-                        <button class="btn-add">
-                            <span class="btn-action-add" href="#">+</span>
-                            <span class="quantity" href="#">1</span>
-                            <span class="btn-action-remove" href="#">-</span>
-                        </button>
-                        <button>
-                            <a href="#">Add to card</a>
-                        </button>
-                    </div>
-                </div> 
-    
-    
-                    
-                <div class="ui-card">
-                    <img src="./images/fotoDog2.png">
-                    <div class="description">
-    
-                        <div class="title-product">
-                        <h2>₦15,000.00</h2>
-                        <div class="favorite-icon"><i class="heart"></i></div>
-                    </div>
-                      
-                        <h3>Dog Portion</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur. <br> Vitae donec pellentesque ut eget tempor <br> egestas diam.</p>
-                        <button class="btn-add">
-                            <span class="btn-action-add" href="#">+</span>
-                            <span class="quantity" href="#">1</span>
-                            <span class="btn-action-remove" href="#">-</span>
-                        </button>
-                        <button>
-                            <a href="#">Add to card</a>
-                        </button>
-                    </div>
-                </div>  
-    
-    
-                <div class="ui-card">
-                    <img src="./images/fotoDog3.png">
-                    <div class="description">
-    
-                        <div class="title-product">
-                        <h2>₦15,000.00</h2>
-                        <div class="favorite-icon"><i class="heart"></i></div>
-                    </div>
-                      
-                        <h3>Pet Plate</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur. <br> Vitae donec pellentesque ut eget tempor <br> egestas diam.</p>
-                        <button class="btn-add">
-                            <span class="btn-action-add" href="#">+</span>
-                            <span class="quantity" href="#">1</span>
-                            <span class="btn-action-remove" href="#">-</span>
-                        </button>
-                        <button>
-                            <a href="#">Add to card</a>
-                        </button>
-                    </div>
-                </div>   
-    
-    
-                <div class="ui-card">
-                    <img src="./images/fotoDog4.png">
-                    <div class="description">
-    
-                        <div class="title-product">
-                        <h2>₦15,000.00</h2>
-                        <div class="favorite-icon"><i class="heart"></i></div>
-                    </div>
-                      
-                        <h3>Dog Water</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur. <br> Vitae donec pellentesque ut eget tempor <br> egestas diam.</p>
-                        <button class="btn-add">
-                            <span class="btn-action-add" href="#">+</span>
-                            <span class="quantity" href="#">1</span>
-                            <span class="btn-action-remove" href="#">-</span>
-                        </button>
-                        <button>
-                            <a href="#">Add to card</a>
-                        </button>
-                    </div>
-                </div>  
-    
-    
-                <div class="ui-card">
-                    <img src="./images/fotoDog5.png">
-                    <div class="description">
-    
-                        <div class="title-product">
-                        <h2>₦15,000.00</h2>
-                        <div class="favorite-icon"><i class="heart"></i></div>
-                    </div>
-                      
-                        <h3>Dog Milk</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur. <br> Vitae donec pellentesque ut eget tempor <br> egestas diam.</p>
-                        <button class="btn-add">
-                            <span class="btn-action-add" href="#">+</span>
-                            <span class="quantity" href="#">1</span>
-                            <span class="btn-action-remove" href="#">-</span>
-                        </button>
-                        <button>
-                            <a href="#">Add to card</a>
-                        </button>
-                    </div>
-                </div>  
-    
-    
-                <div class="ui-card">
-                    <img src="./images/fotoDog6.png">
-                    <div class="description">
-    
-                        <div class="title-product">
-                        <h2>₦15,000.00</h2>
-                        <div class="favorite-icon"><i class="heart"></i></div>
-                    </div>
-                      
-                        <h3>Dog Juice</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur. <br> Vitae donec pellentesque ut eget tempor <br> egestas diam.</p>
-                        <button class="btn-add">
-                            <span class="btn-action-add" href="#">+</span>
-                            <span class="quantity" href="#">1</span>
-                            <span class="btn-action-remove" href="#">-</span>
-                        </button>
-                        <button>
-                            <a href="#">Add to card</a>
-                        </button>
-                    </div>
-                </div>   
-    
-    
-                <div class="ui-card">
-                    <img src="./images/fotoDog7.png">
-                    <div class="description">
-    
-                        <div class="title-product">
-                        <h2>₦15,000.00</h2>
-                        <div class="favorite-icon"><i class="heart"></i></div>
-                    </div>
-                      
-                        <h3>Dog Soda</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur. <br> Vitae donec pellentesque ut eget tempor <br> egestas diam.</p>
-                        <button class="btn-add">
-                            <span class="btn-action-add" href="#">+</span>
-                            <span class="quantity" href="#">1</span>
-                            <span class="btn-action-remove" href="#">-</span>
-                        </button>
-                        <button>
-                            <a href="#">Add to card</a>
-                        </button>
-                    </div>
-                </div>   
-            </div>
-            
-            <div class="category-section fish">
-                <div class="ui-card">
-                    <img src="./images/fotoFish1.jpg">
-                    <div class="description">
-    
-                        <div class="title-product">
-                        <h2>₦15,000.00</h2>
-                        <div class="favorite-icon"><i class="heart"></i></div>
-                    </div>
-                      
-                        <h3>Fish Food</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur. <br> Vitae donec pellentesque ut eget tempor <br> egestas diam.</p>
-                        <button class="btn-add">
-                            <span class="btn-action-add" href="#">+</span>
-                            <span class="quantity" href="#">1</span>
-                            <span class="btn-action-remove" href="#">-</span>
-                        </button>
-                        <button>
-                            <a href="#">Add to card</a>
-                        </button>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="category-section birds">
-                <div class="ui-card">
-                    <img src="./images/fotoBird1.png">
-                    <div class="description">
-    
-                        <div class="title-product">
-                        <h2>₦15,000.00</h2>
-                        <div class="favorite-icon"><i class="heart"></i></div>
-                    </div>
-                      
-                        <h3>Bird Water</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur. <br> Vitae donec pellentesque ut eget tempor <br> egestas diam.</p>
-                        <button class="btn-add">
-                            <span class="btn-action-add" href="#">+</span>
-                            <span class="quantity" href="#">1</span>
-                            <span class="btn-action-remove" href="#">-</span>
-                        </button>
-                        <button>
-                            <a href="#">Add to card</a>
-                        </button>
-                    </div>
-                </div> 
-            </div>
+        </div>
+    </div>
 
-        
-        </section>
-        <div class="container-btn">
+    <div class="category-section fish">
+        <div class="ui-card">
+            <img src="./images/fotoFish1.jpg">
+
+            <div class="description">
+                <div class="title-product">
+                    <h2>₦15,000.00</h2>
+                    <div class="favorite-icon"><i class="heart"></i></div>
+                </div>
+
+                <h3>Fish Food</h3>
+                <p>Lorem ipsum dolor sit amet consectetur. <br> Vitae donec pellentesque ut eget tempor <br> egestas
+                    diam.</p>
+                <button class="btn-add">
+                    <span class="btn-action-add" href="#">+</span>
+                    <span class="quantity" href="#">1</span>
+                    <span class="btn-action-remove" href="#">-</span>
+                </button>
+                <button class="btn-add-card">
+                    <a href="#">Add to card</a>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="category-section birds">
+        <div class="ui-card">
+            <img src="./images/fotoBird1.png">
+
+            <div class="description">
+                <div class="title-product">
+                    <h2>₦15,000.00</h2>
+                    <div class="favorite-icon"><i class="heart"></i></div>
+                </div>
+
+                <h3>Bird Water</h3>
+                <p>Lorem ipsum dolor sit amet consectetur. <br> Vitae donec pellentesque ut eget tempor <br> egestas
+                    diam.</p>
+                <button class="btn-add">
+                    <span class="btn-action-add" href="#">+</span>
+                    <span class="quantity" href="#">1</span>
+                    <span class="btn-action-remove" href="#">-</span>
+                </button>
+                <button class="btn-add-card">
+                    <a href="#">Add to card</a>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <div class="container-btn">
         <button><a href="#">View More >>></a></button>
     </div>
-
-        
 </div>
 </section>
 
-
 <section id="services">
     <header>
-    <h2><img src="./images/logoPreto.png" width="30px">Services</h2></header>
+        <h2><img src="./images/logoPreto.png" width="30px">Services</h2>
+    </header>
 
     <div id="container-services">
 
         <div class="services-grid">
 
-<div class="ui-services">
+            <div class="ui-services">
 
-        <div class="grooming"><img src="./images/imageGrooming.png"></div>
-        <div class="description-services">
-            <h3>Grooming</h3>
-            <p>Lorem ipsum dolor sit amet consectetur. <br> Vitae donec pellentesque ut eget tempor <br> egestas diam. Donec pellentesque ut eget <br> tempor egestas diam. Dolor sit amet <br> consectetur. Vitae donec pellentesque ut <br> eget tempor egestas diam. Donec <br> pellentesque ut eget tempor egestas diam.</p>
-            <div class="container-btn-services">
-            <a href="#">Learn More</a>
-        </div>
-        </div>
+                <div class="grooming"><img src="./images/imageGrooming.png"></div>
+                <div class="description-services">
+                    <h3>Grooming</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur. <br> Vitae donec pellentesque ut eget tempor <br> egestas
+                        diam. Donec pellentesque ut eget <br> tempor egestas diam. Dolor sit amet <br> consectetur.
+                        Vitae donec pellentesque ut <br> eget tempor egestas diam. Donec <br> pellentesque ut eget
+                        tempor egestas diam.</p>
+                    <div class="container-btn-services">
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
 
-    </div>
+            </div>
 
-    <div class="ui-services">
-        <div class="boarding"><img src="./images/imageBoarding.png"></div>
-        <div class="description-services">
-            <h3>Boarding</h3>
-            <p>Lorem ipsum dolor sit amet consectetur. <br> Vitae donec pellentesque ut eget tempor <br> egestas diam. Donec pellentesque ut eget <br> tempor egestas diam. Dolor sit amet <br> consectetur. Vitae donec pellentesque ut <br> eget tempor egestas diam. Donec <br> pellentesque ut eget tempor egestas diam.</p>
-            <div class="container-btn-services">
-            <a href="#">Learn More</a>
-        </div>
-        </div>
-        </div>
+            <div class="ui-services">
+                <div class="boarding"><img src="./images/imageBoarding.png"></div>
+                <div class="description-services">
+                    <h3>Boarding</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur. <br> Vitae donec pellentesque ut eget tempor <br> egestas
+                        diam. Donec pellentesque ut eget <br> tempor egestas diam. Dolor sit amet <br> consectetur.
+                        Vitae donec pellentesque ut <br> eget tempor egestas diam. Donec <br> pellentesque ut eget
+                        tempor egestas diam.</p>
+                    <div class="container-btn-services">
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+            </div>
 
 
 
 
             <div class="ui-services adoption">
+
                 <img src="./images/imageAdoption.png">
                 <div class="description-services">
-                    
-                    <h3>Adoption</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur. <br> Vitae donec pellentesque ut eget tempor <br> egestas diam. Donec pellentesque ut eget <br> tempor egestas diam. Dolor sit amet <br> consectetur. Vitae donec pellentesque ut <br> eget tempor egestas diam. Donec <br> pellentesque ut eget tempor egestas diam.</p>
-                
+                    <div class="adoption">
+
+                        <h3>Adoption</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur. <br> Vitae donec pellentesque ut eget tempor <br>
+                            egestas diam. Donec pellentesque ut eget <br> tempor egestas diam. Dolor sit amet <br>
+                            consectetur. Vitae donec pellentesque ut <br> eget tempor egestas diam. Donec <br>
+                            pellentesque ut eget tempor egestas diam.</p>
+                    </div>
                     <div class="container-btn-services">
                         <a href="#">Learn More</a>
                     </div>
@@ -692,12 +718,15 @@
                 <div class="veterinary"><img src="./images/imageVeterinary.png"></div>
                 <div class="description-services">
                     <h3>Veterinary</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur. <br> Vitae donec pellentesque ut eget tempor <br> egestas diam. Donec pellentesque ut eget <br> tempor egestas diam. Dolor sit amet <br> consectetur. Vitae donec pellentesque ut <br> eget tempor egestas diam. Donec <br> pellentesque ut eget tempor egestas diam.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur. <br> Vitae donec pellentesque ut eget tempor <br> egestas
+                        diam. Donec pellentesque ut eget <br> tempor egestas diam. Dolor sit amet <br> consectetur.
+                        Vitae donec pellentesque ut <br> eget tempor egestas diam. Donec <br> pellentesque ut eget
+                        tempor egestas diam.</p>
                     <div class="container-btn-services">
-                    <a href="#">Learn More</a>
+                        <a href="#">Learn More</a>
+                    </div>
                 </div>
-                </div>
-        
+
             </div>
 
 
@@ -706,368 +735,345 @@
                 <div class="training"><img src="./images/imageTraining.png"></div>
                 <div class="description-services">
                     <h3>Training</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur. <br> Vitae donec pellentesque ut eget tempor <br> egestas diam. Donec pellentesque ut eget <br> tempor egestas diam. Dolor sit amet <br> consectetur. Vitae donec pellentesque ut <br> eget tempor egestas diam. Donec <br> pellentesque ut eget tempor egestas diam.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur. <br> Vitae donec pellentesque ut eget tempor <br> egestas
+                        diam. Donec pellentesque ut eget <br> tempor egestas diam. Dolor sit amet <br> consectetur.
+                        Vitae donec pellentesque ut <br> eget tempor egestas diam. Donec <br> pellentesque ut eget
+                        tempor egestas diam.</p>
                     <div class="container-btn-services">
-                    <a href="#">Learn More</a>
+                        <a href="#">Learn More</a>
+                    </div>
                 </div>
-                </div>
-        
+
             </div>
-
-
-    </div>
-
-    </div>
-
-    </section>
-
-    <section id="about">
-
-        <header>
-            <h2><img src="./images/logoPreto.png" width="30px">About US</h2></header>
-
-        <div class="about-container">
-
-            <article class="text-about">
-                <div>
-                    <p>At Paws n’ Play, our journey began with a simple yet profound love for animals. Inspired by the unwavering companionship and joy they bring to our lives, we embarked on a mission to create a haven where pets and their owners alike could experience unparalleled happiness and care.</p><br>
-                    <p>Driven by our passion for animal welfare, we hand-select each product and service with meticulous attention to quality and sustainability. From nutritious food and enriching toys to expert grooming and healthcare, every offering is carefully curated to meet the unique needs of our beloved furry friends.</p><br>
-                    <p>But our commitment doesn't end there. We're dedicated to fostering a community that celebrates the bond between pets and their human companions. Through educational resources, compassionate support, and memorable experiences, we strive to empower pet owners to provide the best possible care for their furry family members.</p><br>
-                    <p>At Paws n’ Play, customer satisfaction isn't just a goal – it's our guiding principle. We go above and beyond to ensure every interaction leaves tails wagging and hearts smiling. From personalized recommendations to attentive service, we're here to make your journey with your pet as joyful and fulfilling as possible.</p><br>
-                    <p>Join us in our mission to create a world where every pet is cherished, every need is met, and every tail wags with happiness. Welcome to Paws n’ Play, where pets are family, and love knows no bounds.</p><br>
-                </div>
-            </article>
-
-            <aside class="img-about">
-
-                <img src="./images/imageAbout.png">
-
-
-            </aside>
 
 
         </div>
 
+    </div>
 
-    </section>
+</section>
 
+<section id="about">
+
+    <header>
+        <h2><img src="./images/logoPreto.png" width="30px">About US</h2>
+    </header>
+
+    <div class="about-container">
+        <article class="text-about">
+            <div>
+                <p>At Paws n’ Play, our journey began with a simple yet profound love for animals. Inspired by the
+                unwavering companionship and joy they bring to our lives, we embarked on a mission to create a haven
+                where pets and their owners alike could experience unparalleled happiness and care.</p><br>
+                <p>Driven by our passion for animal welfare, we hand-select each product and service with meticulous
+                attention to quality and sustainability. From nutritious food and enriching toys to expert grooming
+                and healthcare, every offering is carefully curated to meet the unique needs of our beloved furry
+                friends.</p><br>
+                <p>But our commitment doesn't end there. We're dedicated to fostering a community that celebrates the
+                bond between pets and their human companions. Through educational resources, compassionate support,
+                and memorable experiences, we strive to empower pet owners to provide the best possible care for
+                their furry family members.</p><br>
+                <p>At Paws n’ Play, customer satisfaction isn't just a goal – it's our guiding principle. We go above
+                and beyond to ensure every interaction leaves tails wagging and hearts smiling. From personalized
+                recommendations to attentive service, we're here to make your journey with your pet as joyful and
+                fulfilling as possible.</p><br>
+                <p>Join us in our mission to create a world where every pet is cherished, every need is met, and every
+                tail wags with happiness. Welcome to Paws n’ Play, where pets are family, and love knows no bounds.
+                </p><br>
+            </div>
+        </article>
+
+        <aside class="img-about">
+            <img src="./images/imageAbout.png">
+        </aside>
+
+    </div>
+</section>
+
+<div class="resposive-reverse-column">
     <section id="ourTeam">
-
+    
         <header>
-            <h2><img src="./images/logoPreto.png" width="30px">Our Team</h2></header>
+            <h2><img src="./images/logoPreto.png" width="30px">Our Team</h2>
+        </header>
+    
+        <div class="team-container">
+    
+            <div class="team">
+                <img src="./images/Olivia.jpg">
+                <h3>Dr. Olivia Rhye</h3>
+                <p>Senior Veterinarian</p>
+                <div class="icons">
+                    <img src="./images/X.png">
+                    <img src="./images/linkedin.png">
+                    <img src="./images/bola.png">
+                </div>
 
-            <div class="team-container">
-
-        <div class="team">
-            <img src="./images/Olivia.jpg">
-            <h3>Dr. Olivia Rhye</h3>
-            <p>Senior Veterinarian</p>
-            <div class="icons">
-                <img src="./images/X.png">
-                <img src="./images/linkedin.png">
-                <img src="./images/bola.png">
             </div>
-
-
-        </div>
-
-        <div class="team">
-            <img src="./images/PhoenixBaker.jpg">
-            <h3>Phoenix Baker</h3>
-            <p>Asst. Veterinarian</p>
-            <div class="icons">
-                <img src="./images/X.png">
-                <img src="./images/linkedin.png">
-                <img src="./images/bola.png">
+    
+            <div class="team">
+                <img src="./images/PhoenixBaker.jpg">
+                <h3>Phoenix Baker</h3>
+                <p>Asst. Veterinarian</p>
+                <div class="icons">
+                    <img src="./images/X.png">
+                    <img src="./images/linkedin.png">
+                    <img src="./images/bola.png">
+                </div>
+    
             </div>
-
-
-        </div>
-
-        <div class="team">
-            <img src="./images/LanaSteiner.jpg">
-            <h3>Lana Steiner</h3>
-            <p>Resident Veterinarian</p>
-            <div class="icons">
-                <img src="./images/X.png">
-                <img src="./images/linkedin.png">
-                <img src="./images/bola.png">
+    
+            <div class="team">
+                <img src="./images/LanaSteiner.jpg">
+                <h3>Lana Steiner</h3>
+                <p>Resident Veterinarian</p>
+                <div class="icons">
+                    <img src="./images/X.png">
+                    <img src="./images/linkedin.png">
+                    <img src="./images/bola.png">
+                </div>
+    
             </div>
-
-
-        </div>
-
-        <div class="team">
-            <img src="./images/Demi.jpg">
-            <h3>Demi Wilkinson</h3>
-            <p>Intern Veterinarian</p>
-            <div class="icons">
-                <img src="./images/X.png">
-                <img src="./images/linkedin.png">
-                <img src="./images/bola.png">
+    
+            <div class="team">
+                <img src="./images/Demi.jpg">
+                <h3>Demi Wilkinson</h3>
+                <p>Intern Veterinarian</p>
+                <div class="icons">
+                    <img src="./images/X.png">
+                    <img src="./images/linkedin.png">
+                    <img src="./images/bola.png">
+                </div>
+    
             </div>
-
-
         </div>
-    </div>
-
+    
     </section>
 
-    <section id="blog">
+<section id="blog">
 
-        <header>
-            <h2><img src="./images/logoPreto.png" width="30px">Blog</h2></header>
+    <header>
+        <h2><img src="./images/logoPreto.png" width="30px">Blog</h2>
+    </header>
 
-            <div class="blog-container">
+    <div class="blog-container">
 
-            <article class="blog-text">
+        <article class="blog-text">
 
-                <h3>Milestone: 20,000 Pets Treated</h3><br>
+            <h3>Milestone: 20,000 Pets Treated</h3><br>
                 
-                <p>Eget quis mi enim, leo lacinia pharetra, semper. Eget in <u>volutpat mollis</u> at volutpat lectus velit, sed auctor. Porttitor fames arcu quis fusce augue enim. Quis at habitant diam at. Suscipit <u>tristique risus,</u> at donec. In turpis vel et quam imperdiet. Ipsum molestie aliquet sodales id est ac volutpat. Eget quis mi enim, leo lacinia pharetra, semper. Eget in <u>volutpat mollis</u> at volutpat lectus velit, sed auctor. Porttitor fames arcu quis fusce augue enim. Quis at habitant diam at. Suscipit <u>tristique risus,</u> at donec. In turpis vel et quam imperdiet. Ipsum molestie aliquet sodales id est ac volutpat. </p><br>
+            <p>Eget quis mi enim, leo lacinia pharetra, semper. Eget in <u>volutpat mollis</u> at volutpat lectus velit, sed auctor. Porttitor fames arcu quis fusce augue enim. Quis at habitant diam at. Suscipit <u>tristique risus,</u> at donec. In turpis vel et quam imperdiet. Ipsum molestie aliquet sodales id est ac volutpat. Eget quis mi enim, leo lacinia pharetra, semper. Eget in <u>volutpat mollis</u> at volutpat lectus velit, sed auctor. Porttitor fames arcu quis fusce augue enim. Quis at habitant diam at. Suscipit <u>tristique risus,</u> at donec. In turpis vel et quam imperdiet. Ipsum molestie aliquet sodales id est ac volutpat. </p><br>
 
-                <h4>Renewed target</h4><br>
+            <h4>Renewed target</h4><br>
 
-                <p>Pharetra morbi libero id aliquam elit massa integer tellus. Quis felis aliquam ullamcorper porttitor. Pulvinar ullamcorper sit dictumst ut eget a, elementum eu. Maecenas est morbi mattis id in ac.</p><br>
+            <p>Pharetra morbi libero id aliquam elit massa integer tellus. Quis felis aliquam ullamcorper porttitor. Pulvinar ullamcorper sit dictumst ut eget a, elementum eu. Maecenas est morbi mattis id in ac.</p><br>
 
-                <a href="#about">Read More</a>
+            <a href="#about">Read More</a>
 
-
-            </article>
+        </article>
 
             <aside class="blog-image">
 
-               
-
-                
-
+            <!-- Imagem do Blog, que defini no CSS -->
 
             </aside>
 
+    </div>
+
+</section>
+</div>
+    
+<section id="get-touch">
+
+    <header>
+        <h2><img src="./images/logoBranco.png" width="30px">Get in Touch</h2>
+    </header>
+
+    <div class="get-container">
+
+        <article class="get-form">
+
+            <form id="form">
+                <div class="form-names">
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="firstName" placeholder="First name"
+                        class="input required" oninput="nameValidate()" required>
+                        <span class="span-required">Nome deve ter no mínimo 3 caracteres</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lastName">Last name</label>
+                        <input type="text" id="lastName" name="lastName" placeholder="Last name" class="input required"
+                        oninput="lastNameValidate()">
+                        <span class="span-required">Sobrenome deve ter no mínimo 3 caracteres</span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="you@company.com" class="input required"
+                    oninput="emailValidate()" required>
+                    <span class="span-required">Digite um email válido</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Messege</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="privacyPolicy" class="input required" required>
+                        You agree to our friendly <a href="#">privacy policy.</a>
+                    </label>
+                </div>
+
+                <button type="submit">Send messege</button>
+            </form>
+
+        </article>
+
+    <aside class="get-inform">
+
+        <div class="get-email">
+            <img src="./images/email.png" width="30px">
+            <h3>Email</h3>
+            <p>Our friendly team is here to help.</p>
+            <h4>hello@pawsnplay.com</h4>
         </div>
 
+        <div class="get-chat">
+            <img src="./images/message.png" width="30px">
+            <h3>Live chat</h3>
+            <p>Our friendly team is here to help.</p>
+            <h4>Start new chat</h4>
+        </div>
 
-    </section>
+        <div class="get-office">
+            <img src="./images/local.png" width="30px">
+            <h3>Office</h3>
+            <p>Come say hello at our office HQ.</p>
+            <h4>123, Yaya Abatan st, Ogba Lagos.</h4>
+        </div>
 
-    <section id="get-touch">
+        <div class="get-phone">
+            <img src="./images/phone.png" width="30px">
+            <h3>Phone</h3>
+            <p>Mon-Fri from 8am to 5pm.</p>
+            <h4>+234 901234 384</h4>
+        </div>
 
-        <header>
-            <h2><img src="./images/logoBranco.png" width="30px">Get in Touch</h2></header>
+    </aside>
 
-            <div class="get-container">
+    </div>
 
-                <article class="get-form">
-                    <form id="form">
-                        <div class="form-names">
-                        <div class="form-group">
-                            <label for="firstName">First Name</label>
-                            <input type="text" id="firstName" name="firstName" placeholder="First name" class="input required" oninput="nameValidate()" required>
-                            <span class="span-required">Nome deve ter no mínimo 3 caracteres</span>
-                        </div>
-                        <div class="form-group">
-                            <label for="lastName">Last name</label>
-                            <input type="text" id="lastName" name="lastName" placeholder="Last name" class="input required" oninput="lastNameValidate()">
-                            <span class="span-required">Sobrenome deve ter no mínimo 3 caracteres</span>
-                        </div>
-                    </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" placeholder="you@company.com" class="input required" oninput="emailValidate()" required>
-                            <span class="span-required">Digite um email válido</span>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Messege</label>
-                            <textarea id="message" name="message" required></textarea>
-                        </div>
-                        <div class="form-group">
-                            <label class="checkbox-label">
-                                <input type="checkbox" name="privacyPolicy" class="input required" required>
-                                You agree to our friendly <a href="#">privacy policy.</a>
-                            </label>
-                        </div>
-                        <button type="submit">Send messege</button>
-                    </form>
+</section>
 
+<section id="newsletter">
+    
+    <header>
 
-                </article>
-
-                
-               
-                
-
-            
-
-            <aside class="get-inform">
-
-                    <div class="get-email">
-
-                        <img src="./images/email.png" width="30px">
-                        <h3>Email</h3>
-                        <p>Our friendly team is here to help.</p>
-                        <h4>hello@pawsnplay.com</h4>
-
-
-                    </div>
-
-
-
-                    <div class="get-chat">
-
-                        <img src="./images/message.png" width="30px">
-                        <h3>Live chat</h3>
-                        <p>Our friendly team is here to help.</p>
-                        <h4>Start new chat</h4>
-
-                    </div>
-
-                    <div class="get-office">
-
-                        <img src="./images/local.png" width="30px">
-                        <h3>Office</h3>
-                        <p>Come say hello at our office HQ.</p>
-                        <h4>123, Yaya Abatan st, Ogba Lagos.</h4>
-
-                    </div>
-
-                    <div class="get-phone">
-
-                        <img src="./images/phone.png" width="30px">
-                        <h3>Phone</h3>
-                        <p>Mon-Fri from 8am to 5pm.</p>
-                        <h4>+234 901234 384</h4>
-                    </div>
-
-
-
-
-                </aside>
-
-            </div>
-
-
-
-    </section>
-
-    <section id="newsletter">
-
-        <header>
-            <div class="news-text">
+        <div class="news-text">
             <h2>Join our newsletter</h2>
             <p>Be the first to receive latest updates on promo, sales and offers</p>
-            </div>
-            <div class="news-input">
-                <form id="newsletterForm">
-                    <input type="email" id="emailNews" name="emailNews" placeholder="Enter your email" required>
-                    <button type="submit">Subscribe</button>
-                </form>
-            </div>
-        </header>
+        </div>
 
-    </section>
+        <div class="news-input">
+            <form id="newsletterForm">
+                <input type="email" id="emailNews" name="emailNews" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
 
-    <section id="footer">
+    </header>
+    
+</section>
 
-        <div class="footer-container">
+<section id="footer">
 
-            <div class="footer-text">
-                <h3><img src="./images/logoBranco.png">
-                Paws n’ Play</h3>
-                <p>Where wagging tails and purring hearts <br> reign supreme!</p>
-  
-            </div>
-
-            <div class="footer-section">
-                <h3>Shop</h3>
-                <ul>
-                  <li><a href="#services">Pet Adoption</a></li>
-                  <li><a href="#services">Nutrition</a></li>
-                  <li><a href="#services">Pet Care</a></li>
-                  <li><a href="#services">Pet Food</a></li>
-                  <li><a href="#services">Pricing</a></li>
-                </ul>
-              </div>
-            
-              <div class="footer-section">
-                <h3>Company</h3>
-                <ul>
-                  <li><a href="#about">About us</a></li>
-                  <li><a href="#ourTeam">Careers</a></li>
-                  <li><a href="#header">Press</a></li>
-                  <li><a href="#newsletter">News</a></li>
-                  <li><a href="#get-touch">Contact</a></li>
-                </ul>
-              </div>
-            
-              <div class="footer-section">
-                <h3>Services</h3>
-                <ul>
-                  <li><a href="#services">Grooming</a></li>
-                  <li><a href="#services">Boarding</a></li>
-                  <li><a href="#services">Training</a></li>
-                  <li><a href="#services">Veterinary</a></li>
-                  <li><a href="#get-touch">Support</a></li>
-                </ul>
-              </div>
-            
-              <div class="footer-section">
-                <h3>Social</h3>
-                <ul>
-                  <li><a href="#footer">Twitter</a></li>
-                  <li><a href="#footer">LinkedIn</a></li>
-                  <li><a href="#footer">Facebook</a></li>
-                  <li><a href="#footer">AngelList</a></li>
-                  <li><a href="#footer">Dribbble</a></li>
-                </ul>
-              </div>
-            
-              <div class="footer-section">
-                <h3>Legal</h3>
-                <ul>
-                  <li><a href="#get-touch">Terms</a></li>
-                  <li><a href="#get-touch">Privacy</a></li>
-                  <li><a href="#get-touch">Cookies</a></li>
-                  <li><a href="#get-touch">Licenses</a></li>
-                  <li><a href="#get-touch">Settings</a></li>
-                </ul>
-              </div>
-            
-
-
+    <div class="footer-container">
+        
+        <div class="footer-text">
+            <h3><img src="./images/logoBranco.png">Paws n’ Play</h3>
+            <p>Where wagging tails and purring hearts <br> reign supreme!</p>
         </div>
         
-        <footer>
-            <div class="footer-text">
-                <h3>&copy; 2024 Paws n’ Play. All rights reserved.</h3>
+        <div class="footer-section">
+            <h3>Shop</h3>
+            <ul>
+                <li><a href="#services">Pet Adoption</a></li>
+                <li><a href="#services">Nutrition</a></li>
+                <li><a href="#services">Pet Care</a></li>
+                <li><a href="#services">Pet Food</a></li>
+                <li><a href="#services">Pricing</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-section">
+            <h3>Company</h3>
+            <ul>
+                <li><a href="#about">About us</a></li>
+                <li><a href="#ourTeam">Careers</a></li>
+                <li><a href="#home">Press</a></li>
+                <li><a href="#newsletter">News</a></li>
+                <li><a href="#get-touch">Contact</a></li>
+                </ul>
+        </div>
+        
+        <div class="footer-section">
+            <h3>Services</h3>
+            <ul>
+                <li><a href="#services">Grooming</a></li>
+                <li><a href="#services">Boarding</a></li>
+                <li><a href="#services">Training</a></li>
+                <li><a href="#services">Veterinary</a></li>
+                <li><a href="#get-touch">Support</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-section">
+            <h3>Social</h3>
+            <ul>
+                <li><a href="#footer">Twitter</a></li>
+                <li><a href="#footer">LinkedIn</a></li>
+                <li><a href="#footer">Facebook</a></li>
+                <li><a href="#footer">AngelList</a></li>
+                <li><a href="#footer">Dribbble</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-section">
+            <h3>Legal</h3>
+            <ul>
+                <li><a href="#get-touch">Terms</a></li>
+                <li><a href="#get-touch">Privacy</a></li>
+                <li><a href="#get-touch">Cookies</a></li>
+                <li><a href="#get-touch">Licenses</a></li>
+                <li><a href="#get-touch">Settings</a></li>
+            </ul>
+        </div>
+        
+    </div>
+        
+    <footer>
 
-            </div>
+        <div class="footer-text-end">
+            <h3>&copy; 2024 Paws n’ Play. All rights reserved.</h3>
+        </div>
 
-            <div class="footer-logos">
-
-                <img src="./images/XWhite.png">
-                <img src="./images/linkedinWhite.png">
-                <img src="./images/facebookWhite.png">
-                <img src="./images/githubWhite.png">
-                <img src="./images/paz.png">
-                <img src="./images/bolaWhite.png">
-
-
-
-
-            </div>
-
-            
-        </footer>
-
-
-    </section>
-
+        <div class="footer-logos">
+            <img src="./images/XWhite.png">
+            <img src="./images/linkedinWhite.png">
+            <img src="./images/facebookWhite.png">
+            <img src="./images/githubWhite.png">
+            <img src="./images/paz.png">
+            <img src="./images/bolaWhite.png">
+        </div>
    
+    </footer>
 
-
-
-
-
-
+</section>
 
 </body>
 </html>
